@@ -228,9 +228,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-servis-item {
-    /* gap: 24px;
-    display: flex; */
-    /* flex-wrap: wrap; */
     flex-basis: calc((100% - 72px) / 4);
 }
 
@@ -341,7 +338,7 @@ margin-bottom: 8px;
 }
 
 .social-link:hover {
-    background-color:#404bbf;
+    background-color: #404bbf;
 ;
 }
 
@@ -380,7 +377,14 @@ margin-bottom: 8px;
 
 .main-portfolio-item {
     width: ((100% - 48px) / 3);
-    
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .overlay-blok {
@@ -440,7 +444,7 @@ color: #434455;
     padding: 100px 0;
 }
 
-.container .container-footer {
+.container-footer {
     display: flex;
     flex-direction: row;
     align-items: baseline;
